@@ -8,3 +8,6 @@ safety==1.10.3
 liccheck==0.6.0
 pytest-cov==2.12.1
 mdformat==0.7.6
+dynaconf==3.1.7
+msgraph-core==0.2.2
+azure-identity==1.6.1
