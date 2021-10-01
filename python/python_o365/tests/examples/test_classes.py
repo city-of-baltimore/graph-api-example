@@ -1,6 +1,6 @@
 import pytest
 
-from boilerplate.examples import Person
+from o365_example.examples import Person
 
 
 class TestPerson:
