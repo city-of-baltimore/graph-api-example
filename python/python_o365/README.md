@@ -1,8 +1,8 @@
-# Python Library: `msgraph`
+# Python Library: `O365`
 
 <!-- TOC -->
 
-- [Python Library: `msgraph`](#python-library-msgraph)
+- [Python Library: `O365`](#python-library-o365)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
@@ -38,7 +38,7 @@ If you receive an error message, or the version of python you have installed is 
 
 ### Installation
 
-1. Change directory into this folder: `cd python/msgraph_sdk`
+1. Change directory into this folder: `cd python/python_o365`
 1. Create a new virtual environment: `python -m venv env`
 1. Activate the virtual environment
    - On Mac/Linux: `source env/bin/activate`

@@ -57,36 +57,36 @@ The Graph API Examples repository is designed to provide concrete examples for m
 
 - SharePoint Sites and Lists
   - Site Resource
-    - Graph API documentation
-    - Using `msgraph`
-    - Using `O365`
-    - Using `AzureGraph`
-    - Using `Microsoft365R`
+    - [Graph API documentation](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0)
+    - [Using `msgraph`](python/msgraph_sdk/README.md#site-resource)
+    - [Using `O365`](python/python_o365/README.md#site-resource)
+    - [Using `AzureGraph`](R/azure_graph/README.md#site-resource)
+    - [Using `Microsoft365R`](R/microsoft365r/README.md#site-resource)
   - List Resource
-    - Graph API documentation
-    - Using `msgraph`
-    - Using `O365`
-    - Using `AzureGraph`
-    - Using `Microsoft365R`
+    - [Graph API documentation](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0)
+    - [Using `msgraph`](python/msgraph_sdk/README.md#list-resource)
+    - [Using `O365`](python/python_o365/README.md#list-resource)
+    - [Using `AzureGraph`](R/azure_graph/README.md#list-resource)
+    - [Using `Microsoft365R`](R/microsoft365r/README.md#list-resource)
   - ListItem Resource
-    - Graph API documentation
-    - Using `msgraph`
-    - Using `O365`
-    - Using `AzureGraph`
-    - Using `Microsoft365R`
+    - [Graph API documentation](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-1.0)
+    - [Using `msgraph`](python/msgraph_sdk/README.md#listitem-resource)
+    - [Using `O365`](python/python_o365/README.md#listitem-resource)
+    - [Using `AzureGraph`](R/azure_graph/README.md#listitem-resource)
+    - [Using `Microsoft365R`](R/microsoft365r/README.md#listitem-resource)
 - SharePoint Drives and OneDrive
   - Drive Resource
-    - Graph API documentation
-    - Using `msgraph`
-    - Using `O365`
-    - Using `AzureGraph`
-    - Using `Microsoft365R`
+    - [Graph API documentation](https://docs.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0)
+    - [Using `msgraph`](python/msgraph_sdk/README.md#drive-resource)
+    - [Using `O365`](python/python_o365/README.md#drive-resource)
+    - [Using `AzureGraph`](R/azure_graph/README.md#drive-resource)
+    - [Using `Microsoft365R`](R/microsoft365r/README.md#drive-resource)
   - DriveItem Resource
-    - Graph API documentation
-    - Using `msgraph`
-    - Using `O365`
-    - Using `AzureGraph`
-    - Using `Microsoft365R`
+    - [Graph API documentation](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0)
+    - [Using `msgraph`](python/msgraph_sdk/README.md#driveitem-resource)
+    - [Using `O365`](python/python_o365/README.md#driveitem-resource)
+    - [Using `AzureGraph`](R/azure_graph/README.md#driveitem-resource)
+    - [Using `Microsoft365R`](R/microsoft365r/README.md#driveitem-resource)
 
 ## Additional Resources
 
