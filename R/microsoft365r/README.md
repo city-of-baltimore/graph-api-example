@@ -116,7 +116,7 @@ con_to_sharepoint ### shows functions that can be used with the sharepoint conne
 ### List Resource
 
 ```R
-#### connect to sharepoiont list called 'test_demo'
+#### connect to sharepoint list called 'test_demo'
 
 con_to_sharepoint$get_list("test_demo") ### shows functions that can be performed
 
@@ -133,7 +133,7 @@ con_to_sharepoint$create_item( Title = "some title",   #### write to Sharepoint;
 ### ListItem Resource
 
 ```R
-## See list of functions
+## See list of functions for sharepoint list called 'test_demo'
 
 con_to_sharepoint$get_list("shiny_test_demo") 
 ```
