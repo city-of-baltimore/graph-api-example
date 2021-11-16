@@ -48,52 +48,52 @@ This is by far the best method if you are want to access SharePoint data in a sc
 1. Save those as environment variables
 
 
-You should never store secrets in your code. Instead save them to the `.Reviron` file that should never be in any git commit. Here are two ways to do this:
+   You should never store secrets in your code. Instead save them to the `.Reviron` file that should never be in any git commit. Here are two ways to do this:
 
-In Rstudio:
+   In Rstudio:
 
-```R
-usethis::edit_r_environ()
+   ```R
+   usethis::edit_r_environ()
 
-### this triggers a file to pop up. In the .Renvion that pops up 
-### add your secret in this format, no quotes or spaces needed
+   ### this triggers a file to pop up. In the .Renvion that pops up 
+   ### add your secret in this format, no quotes or spaces needed
 
-azure_app_id=zzzz1234appID
-azure_graph_secret=Ade2365645fgdfg
+   azure_app_id=zzzz1234appID
+   azure_graph_secret=Ade2365645fgdfg
 
-```
+   ```
 
-In Linux or Mac:
+   In Linux or Mac:
 
-```
-in terminal
+   ```bash
+   ## in terminal using the nano editor
 
-cd ~
-nano .Renviron
+   cd ~
+   nano .Renviron
 
-### add environmental variables like above and save
+   ### add environmental variables like above and save
 
-```
+   ```
 
 
-Save changes and restart R. Now you can use `Sys.getenv("azure_app_id")` in the code. Voila, no secrets in your code.
+   Save changes and restart R. Now you can use `Sys.getenv("azure_app_id")` in the code. Voila, no secrets in your code.
 
 
 1. Create login
 
-Use those secrets create a login client to authenticate with Microsoft Graph:
+   Use those secrets create a login client to authenticate with Microsoft Graph:
 
-```
-gr <- azureGraph::create_graph_login(tenant = "bmore", 
+   ```R
+   gr <- azureGraph::create_graph_login(tenant = "bmore", 
                          app=Sys.getenv("azure_app_id"), 
                          password=Sys.getenv("azure_graph_secret"))
 
 
-### did it work?
-azureGraph::list_graph_logins()
+   ### did it work?
+   azureGraph::list_graph_logins()
 
 
-```
+   ```
 
 1. You're now connected and can use the resultant `gr` object for a number of functions. So far we've used `azureGraph` to create the connection. Now we'll switch over to `Microsoft365R` for reading and writing of data.
 
@@ -115,16 +115,16 @@ con_to_sharepoint ### shows functions that can be used with the sharepoint conne
 
 ### List Resource
 
-```r
-#### connect to sharepoiont list called test_demo
+```R
+#### connect to sharepoiont list called 'test_demo'
 
 con_to_sharepoint$get_list("test_demo") ### shows functions that can be performed
 
-con_to_sharepoint$get_list("shiny_test_demo")$list_items()  ### reads sharepoint list as dataframe
+con_to_sharepoint$get_list("shiny_test_demo")$list_items()  ### reads sharepoint list as dataframe!
 
 
-con_to_sharepoint$create_item( Title = "some title", #### write to Sharepoint; fields need to match the sharepoint list
-                     email = "boaty@mcboatface.ship",
+con_to_sharepoint$create_item( Title = "some title",   #### write to Sharepoint; 
+                     email = "boaty@mcboatface.ship",  ### fields need to match the sharepoint list
                      uploadtime = Sys.time(),
                      measurement = "very good")
                      
@@ -132,7 +132,7 @@ con_to_sharepoint$create_item( Title = "some title", #### write to Sharepoint; f
 
 ### ListItem Resource
 
-```r
+```R
 ## See list of functions
 
 con_to_sharepoint$get_list("shiny_test_demo") 
@@ -142,7 +142,7 @@ con_to_sharepoint$get_list("shiny_test_demo")
 
 Documents saved on sharepoint can be read, created, and edited.
 
-```r
+```R
 ### connect to sharepoint documents
 drv <- con_to_sharepoint$get_drive() 
 
