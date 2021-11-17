@@ -120,11 +120,11 @@ con_to_sharepoint ### shows functions that can be used with the sharepoint conne
 
 con_to_sharepoint$get_list("test_demo") ### shows functions that can be performed
 
-con_to_sharepoint$get_list("shiny_test_demo")$list_items()  ### reads sharepoint list as dataframe!
+con_to_sharepoint$get_list("test_demo")$list_items()  ### reads sharepoint list as dataframe!
 
-
-con_to_sharepoint$create_item( Title = "some title",   #### write to Sharepoint; 
-                     email = "boaty@mcboatface.ship",  ### fields need to match the sharepoint list
+#### write to Sharepoint; fields need to match the sharepoint list
+con_to_sharepoint$get_list("test_demo")$create_item( Title = "some title",  
+                     email = "boaty@mcboatface.ship",  
                      uploadtime = Sys.time(),
                      measurement = "very good")
                      
@@ -135,7 +135,7 @@ con_to_sharepoint$create_item( Title = "some title",   #### write to Sharepoint;
 ```R
 ## See list of functions for sharepoint list called 'test_demo'
 
-con_to_sharepoint$get_list("shiny_test_demo") 
+con_to_sharepoint$get_list("test_demo") 
 ```
 
 ### Sharepoint Documents
