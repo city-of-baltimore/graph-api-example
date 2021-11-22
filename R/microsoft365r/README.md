@@ -42,7 +42,7 @@ The usual package installation for `Microsoft365R`. These instructions will also
 
 ### Get access without a user
 
-This is by far the best method if you are want to access SharePoint data in a script or app. In `azureGraph` and `Microsoft365R`, this access method is called the `client_credentials flow`. The ID and secret from BCIT should be stored as environment variables then referenced in the script/app. Other methods may prompt you to log in using a web browser. This method with give auth to an app, thus the app is permissioned to particulate sites and functions.
+This is by far the best method if you want to access SharePoint data in a script or app. In `azureGraph` and `Microsoft365R`, this access method is called the `client_credentials flow`. The ID and secret from BCIT should be stored as environment variables then referenced in the script/app. Other methods may prompt you to log in using a web browser. This method with both authenticate an app with Graph API, and authorize it to access particular sites and resources.
 
 1. Get app ID and secret from BCIT
 1. Save those as environment variables
